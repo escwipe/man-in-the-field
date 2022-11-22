@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,100;1,200;1,300&display=swap');
 
 * {
     padding: 0;
     margin: 0;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
 }
 
 body {
@@ -67,8 +69,8 @@ main {
     background: linear-gradient(89.57deg, rgba(237, 239, 243, 0.3) 0.39%, rgba(255, 255, 255, 0.3) 99.67%);
     box-shadow: 0px 4px 24px rgba(67, 70, 84, 0.1);
     border-radius: 8px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .truck-trailer .active {
@@ -98,8 +100,8 @@ main {
     background: linear-gradient(90deg, rgba(237, 239, 243, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
     filter: drop-shadow(0px 4px 24px rgba(67, 70, 84, 0.1));
     border-radius: 8px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-right: 10px;
     padding-left: 10px
 }
@@ -113,8 +115,8 @@ main {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 6px;
     color: #0D2750;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     margin-bottom: 12px;
 }
 
@@ -122,7 +124,7 @@ main {
     background: linear-gradient(90deg, rgba(237, 239, 254, 0.8) 0%, rgba(255, 255, 255, 0) 97.13%);
     filter: drop-shadow(0px 4px 24px rgba(67, 70, 84, 0.1));
     border-radius: 8px;
-    padding: 12px;
+    padding: 18px;
     color: #0D2750;
 }
 
@@ -136,10 +138,11 @@ main {
     box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 6px;
 }
 
 .start-inspection {
@@ -161,8 +164,8 @@ main {
     border: 1px solid rgba(237, 239, 243, 0.3);
     border-radius: 6px;
     color: white;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     width: 100%;
     font-size: 16px !important;
 }
@@ -174,14 +177,19 @@ main {
     border-radius: 6px;
     outline: none;
     padding-left: 6px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     padding-right: 6px;
+    font-size: 18px !important;
 }
 
 .inspection-types .active {
     background: linear-gradient(90deg, #0062FF -2.76%, #0059DE 100%);
     color: white;
+}
+
+.truck-number .item {
+    font-size: 18px !important;
 }
 
 .truck-size { width: 77px; height: 77px; }

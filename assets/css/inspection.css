@@ -12,6 +12,7 @@ body {
 
 main {
     padding: 1.5vh;
+    font-size: 0.9rem;
 }
 
 main .details {
@@ -23,40 +24,33 @@ main .details {
 main .details .truck {
     display: flex;
     flex-direction: column;
-    padding-left: 2vh;
-    padding-right: 2vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    width: 22vw;
+    height: 20vw;
     align-items: center;
     justify-content: center;
-    margin-right: 3vh;
+    margin-right: 5vw;
 }
 
 main .details {
     background: linear-gradient(90deg, rgba(233, 236, 242, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     filter: drop-shadow(0px 4px 24px rgba(67, 70, 84, 0.1));
     border-radius: 8px;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    padding-left: 1vh;
-    padding-right: 1vh;
+    padding: 2vh;
 }
 
 main .details .info {
     color: #0D2750;
 }
 
-main .details .truck span {
-    margin-top: 3px;
-}
-
 main .details .dots {
-    width: 21px;
+    width: 5vw;
     height: 5px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10%;
+    right: 5%;
 }
+
+b { font-weight: 400; }
 
 main .details .truck {
     background: linear-gradient(334.79deg, #F7F9FB 32.01%, #E9E9E9 70.45%);
@@ -68,18 +62,21 @@ main .details .truck {
 .reason-list {
     display: flex;
     flex-direction: column;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .reason-list h3 {
+    font-size: 0.9rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
     color: #0D2750;
     font-weight: 400;
-    margin-top: 10px;
-    margin-bottom: 6px;
-    padding-left: 5%;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    margin-left: -5vw;
 }
 
 .reason-list .list {
@@ -87,20 +84,20 @@ main .details .truck {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 10px;
 }
 
 .reason-list .list span {
+    font-weight: 400;
     color: #0D2750;
-    margin-top: 3%;
+    margin-bottom: 3%;
     background: linear-gradient(90.05deg, #DCE0E8 1.38%, #FFFFFF 99.71%);
     border: 1px solid rgba(237, 239, 243, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 6px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 20px;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
     width: 100%;
 }
 
@@ -111,65 +108,20 @@ main .details .truck {
 }
 
 .inspection-submit button {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 9px;
+    padding-right: 9px;
     width: 100%;
     background: linear-gradient(90deg, #0062FF -2.76%, #0059DE 100%);
     border: 1px solid rgba(237, 239, 243, 0.3);
     border-radius: 6px; 
     color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .primary {
     background: #0062FF !important;
     color: white !important;
-}
-
-/* Responsivness */
-
-/* Surface Pro 7 */
-@media screen and (max-height: 1370px) {
-    .container { margin-top: 35%; }
-    * { font-size:  2rem ;}
-}
-
-/* iPad Air */
-@media screen and (max-height: 1180px) {
-    .container { margin-top: 25%; }
-    * { font-size:  1.5rem ;}
-}
-
-/* Samsung Galaxy S20 Ultra */
-@media screen and (max-height: 915px) {
-    .container { margin-top: 45%; }
-    * { font-size:  1rem ;}
-}
-
-/* iPhone XR */
-@media screen and (max-height: 900px) {
-    .container { margin-top: 45%; }
-    * { font-size:  1rem ;}
-}
-
-/* Samsung Galaxy S8+ */
-@media screen and (max-height: 740px) {
-    .container { margin-top: 45%; }
-    * { font-size:  1rem ;}
-}
-
-/* iPhone SE */
-@media screen and (max-height: 667px) {
-    .container { margin-top: 25%; }
-    * { font-size:  1rem ;}
-}
-
-/* Surface Duo */
-@media screen and (max-height: 720px) {
-    .container { margin-top: 25%; }
-    * { font-size:  1rem ;}
+    font-weight: 300 !important;
 }

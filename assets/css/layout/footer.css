@@ -57,6 +57,13 @@ footer .bar .item span { font-size: 1.5vh; }
     footer .bar .item img { width: 4.2vh; height: 4.2vh; }
 }
 
+/* Samsung Galaxy A51/71 */
+@media screen and (max-height: 914px) {
+    footer { height: 9vh; }
+    footer .bar { gap: 2.2vh; }
+    footer .bar .item img { width: 3vh; height: 3vh; }
+}
+
 /* iPhone XR */
 @media screen and (max-height: 900px) {
     footer { height: 9vh; }

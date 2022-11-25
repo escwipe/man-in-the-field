@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto", Arial, sans-serif;
-}
-
 body {
-    width: 100%;
-    height: 100%;
     background: url('../imgs/main-bg.png'); 
     background-position: center center;
     background-size: cover;
@@ -20,43 +10,8 @@ body {
     bottom: 0%;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.navigation-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.hamburger-menu img {
-    width: 25px;
-    height: 25px;
-}
-
-.bell img {
-    width: 20px;
-    height: 25px;
-}
-
-.bell {
-    margin-right: 30px;
-}
-
-.user img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
-
 main {
-    padding: 10px;
-    padding-right: 20px;
+    padding: 1.5vh;
 }
 
 main .details {
@@ -68,23 +23,23 @@ main .details {
 main .details .truck {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 3vh;
 }
 
 main .details {
     background: linear-gradient(90deg, rgba(233, 236, 242, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     filter: drop-shadow(0px 4px 24px rgba(67, 70, 84, 0.1));
     border-radius: 8px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
 }
 
 main .details .info {
@@ -175,107 +130,46 @@ main .details .truck {
     color: white !important;
 }
 
-section {
-    margin-top: 30%;
-    display: grid;
-    grid-template-columns: 48% 48%;
-    grid-row: auto auto;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+/* Responsivness */
+
+/* Surface Pro 7 */
+@media screen and (max-height: 1370px) {
+    .container { margin-top: 35%; }
+    * { font-size:  2rem ;}
 }
 
-section .button-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(334.79deg, #F7F9FB 32.01%, #E9E9E9 70.45%);
-    border: 1px solid rgba(237, 239, 243, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
-    border-radius: 6px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 35px;
-    padding-right: 35px;
-    position: relative;
+/* iPad Air */
+@media screen and (max-height: 1180px) {
+    .container { margin-top: 25%; }
+    * { font-size:  1.5rem ;}
 }
 
-section .button-group img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
+/* Samsung Galaxy S20 Ultra */
+@media screen and (max-height: 915px) {
+    .container { margin-top: 45%; }
+    * { font-size:  1rem ;}
 }
 
-section .button-group span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    font-size: 15px;
-    color: #0D2750;
-    font-weight: 400;
-    width: 100%;
+/* iPhone XR */
+@media screen and (max-height: 900px) {
+    .container { margin-top: 45%; }
+    * { font-size:  1rem ;}
 }
 
-section .button-group .dot {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background: linear-gradient(181.74deg, #FFFFFF 20.78%, rgba(98, 98, 98, 0) 127.65%);
-    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
-    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
+/* Samsung Galaxy S8+ */
+@media screen and (max-height: 740px) {
+    .container { margin-top: 45%; }
+    * { font-size:  1rem ;}
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 23.08%, rgba(255, 255, 255, 0.1) 77.44%);
-    border: 1px solid #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
-    border-radius: 6px;
-    height: 70px;
+/* iPhone SE */
+@media screen and (max-height: 667px) {
+    .container { margin-top: 25%; }
+    * { font-size:  1rem ;}
 }
 
-footer .bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-footer .bar .item img {
-    width: 27px;
-    height: 27px;
-}
-
-footer .bar .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-footer .bar .item .active {
-    color: #0062FF;
-}
-
-footer .bar .item img {
-    width: 29px;
-    height: 29px;
-}
-
-footer .bar .item span {
-    color: #0D2750;
-    font-size: 14px;
+/* Surface Duo */
+@media screen and (max-height: 720px) {
+    .container { margin-top: 25%; }
+    * { font-size:  1rem ;}
 }

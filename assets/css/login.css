@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto", Arial, sans-serif;
-}
-
 body {
-    width: 100%;
-    height: 100%;
     background: url('../imgs/background.png'); 
     background-position: center center;
     background-size: cover;
@@ -26,17 +16,54 @@ body {
 
 .container {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 90%;
+}
+
+/* Breakpoints */
+
+/* Surface Pro 7 */
+@media screen and (max-height: 1370px) {
+    .container {
+        margin-top: 65%;
+    }
+}
+
+/* iPad Air */
+@media screen and (max-height: 1180px) {
+    .container {
+        margin-top: 55%;
+    }
+}
+
+/* iPhone XR */
+@media screen and (max-height: 900px) {
+    .container {
+        margin-top: 85%;
+    }
+}
+
+/* Samsung Galaxy S8+ */
+@media screen and (max-height: 740px) {
+    .container {
+        margin-top: 75%;
+    }
+}
+
+/* iPhone SE */
+@media screen and (max-height: 667px) {
+    .container {
+        margin-top: 50%;
+    }
 }
 
 .heading {
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 2vh;
     color: #0D2750;
     margin-bottom: 20%;
 }
@@ -44,15 +71,15 @@ body {
 .input {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 80%;
 }
 
 .input .input-heading {
     color: #0062FF;
-    font-weight: 400;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    margin-top: 5px;
+    font-weight: 350;
+    font-size: 2vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
 }
 
 .input-bellow {
@@ -60,16 +87,23 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    width: 300px;
-    font-size: 17px;
+    padding: 1vh;
+    width: 80%;
+    font-size: 2vh;
 }
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input { margin-right: 1vh; }
 
 .input input {
     border: 0;
     border-bottom: 2px solid;
     border-bottom-color: #0062FF;
-    font-size: 1.2rem;
+    font-size: 2vh;
     background-color: transparent;
     width: 100%;
     outline: none;
@@ -89,23 +123,23 @@ body {
     border: 1px solid rgba(237, 239, 243, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 6px;
-    padding-top: 7px;
-    padding-bottom: 5px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-top: 0.7vh;
+    padding-bottom: 0.5vh;
+    padding-left: 7.6vh;
+    padding-right: 7.6vh;
     text-transform: uppercase;
     color: #0062FF;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 2vh;
+    font-weight: 300;
 }
 
 .login-submit {
-    margin-top: 25%;
-    margin-bottom: 35px;
+    margin-top: 15%;
+    margin-bottom: 8vh;
 }
 
 .info {
     color: #0D2750;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 2vh;
 }

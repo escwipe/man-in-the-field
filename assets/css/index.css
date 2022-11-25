@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto", Arial, sans-serif;
-}
-
 body {
-    width: 100%;
-    height: 100%;
     background: url('../imgs/background.png'); 
     background-position: center center;
     background-size: cover;
@@ -24,19 +14,17 @@ body {
     background: url("../imgs/logo.png");
 }
 
-.jdm-heading {
+.heading {
     position: fixed;
-    bottom: 50px;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1.7vh;
     line-height: 24px;
     display: flex;
     align-items: flex-end;
     text-align: center;
-
     color: #0D2750;
 }

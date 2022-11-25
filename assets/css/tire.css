@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto", Arial, sans-serif;
-}
-
 body {
-    width: 100%;
-    height: 100%;
     background: url('../imgs/main-bg.png'); 
     background-position: center center;
     background-size: cover;
@@ -18,35 +8,6 @@ body {
     right: 0%;
     top: 0%;
     bottom: 0%;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.navigation-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.bell img {
-    width: 20px;
-    height: 25px;
-}
-
-.bell {
-    margin-right: 30px;
-}
-
-.user img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
 }
 
 main {
@@ -156,108 +117,3 @@ main {
 .green { background: linear-gradient(90deg, #75BB0A 0%, #6AAD05 100%) !important; color: white; }
 .fallow-up { background: linear-gradient(90deg, #FEC901 0%, #FDB900 100%) !important; color: white; }
 .bad { background: linear-gradient(89.13deg, #F61614 0.75%, #CD060D 99.25%) !important; color: white; }
-
-section {
-    margin-top: 30%;
-    display: grid;
-    grid-template-columns: 48% 48%;
-    grid-row: auto auto;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
-}
-
-section .button-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(334.79deg, #F7F9FB 32.01%, #E9E9E9 70.45%);
-    border: 1px solid rgba(237, 239, 243, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
-    border-radius: 6px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 35px;
-    padding-right: 35px;
-    position: relative;
-}
-
-section .button-group img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-}
-
-section .button-group span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    font-size: 15px;
-    color: #0D2750;
-    font-weight: 400;
-    width: 100%;
-}
-
-section .button-group .dot {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background: linear-gradient(181.74deg, #FFFFFF 20.78%, rgba(98, 98, 98, 0) 127.65%);
-    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
-    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 23.08%, rgba(255, 255, 255, 0.1) 77.44%);
-    border: 1px solid #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
-    border-radius: 6px;
-    height: 70px;
-}
-
-footer .bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
-}
-
-footer .bar .item img {
-    width: 27px;
-    height: 27px;
-}
-
-footer .bar .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-footer .bar .item .active {
-    color: #0062FF;
-}
-
-footer .bar .item img {
-    width: 29px;
-    height: 29px;
-}
-
-footer .bar .item span {
-    color: #0D2750;
-    font-size: 14px;
-}

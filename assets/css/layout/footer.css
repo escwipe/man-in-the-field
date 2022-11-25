@@ -1,0 +1,79 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 23.08%, rgba(255, 255, 255, 0.1) 77.44%);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    height: 10vh;
+}
+
+footer .bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7vh;
+}
+
+footer .bar .item img {
+    width: 10vh;
+    height: 10vh;
+}
+
+footer .bar .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .bar .item .active {
+    color: #0062FF;
+}
+
+footer .bar .item img {
+    width: 5vh;
+    height: 5vh;
+}
+
+footer .bar .item span {
+    color: #0D2750;
+}
+
+footer .bar .item span { font-size: 1.5vh; }
+
+/* Breakpoints */
+
+/* Surface Pro 7 */
+@media screen and (max-height: 1370px) {
+    footer { height: 10vh; }
+    footer .bar { gap: 6vh; }
+    footer .bar .item img { width: 4.2vh; height: 4.2vh; }
+}
+
+/* iPhone XR */
+@media screen and (max-height: 900px) {
+    footer { height: 9vh; }
+    footer .bar { gap: 2.5vh; }
+    footer .bar .item img { width: 3vh; height: 3vh; }
+}
+
+/* Samsung Galaxy S8+ */
+@media screen and (max-height: 740px) {
+    footer { height: 9vh; }
+    footer .bar { gap: 3.5vh; }
+    footer .bar .item img { width: 3vh; height: 3vh; }
+}
+
+/* iPhone SE */
+@media screen and (max-height: 667px) {
+    footer { height: 9vh; }
+    footer .bar { gap: 5vh; }
+    footer .bar .item img { width: 3.5vh; height: 3.5vh; }
+}

@@ -1,0 +1,159 @@
+body {
+    background: url('../imgs/main-bg.png'); 
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+main {
+    padding-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+main .list {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(237, 239, 243, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(0px 4px 24px rgba(67, 70, 84, 0.1));
+    border-radius: 8px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+main .list .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(89.13deg, #DCE0E8 0.75%, #FFFFFF 99.25%);
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    padding-left: 3vw;
+    padding-right: 2vw;
+    padding-top: 1vh !important;
+    padding-bottom: 1vh !important;
+    color: #0D2750;
+    margin-bottom: 2vh;
+    font-size: 0.9em;
+}
+
+.item .name {
+    font-weight: 400;
+}
+
+.item-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-input button {
+    font-weight: 400;
+    width: 100%;
+    background: linear-gradient(90.05deg, #DCE0E8 1.38%, #FFFFFF 99.71%);
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    color: #0D2750;
+}
+
+.item input {
+    background: #FFFFFF;
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    width: 40vw;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    color: #0D2750;   
+    font-weight: 400;
+    outline: none;
+}
+
+main .cloud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #0062FF -2.76%, #0059DE 100%);
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    border-radius: 6px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-bottom: 3vh;
+    position: relative;
+}
+
+main .cloud span {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+main .cloud .line {
+    width: 140%;
+    height: 1px;
+    background-color: white;
+}
+
+.cloud .centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1vh;
+}
+
+.cloud .close {
+    position: absolute;
+    top: 0;
+    right: 2vw;
+}
+
+main .list .list-head {
+    display: flex;
+    align-items: center;
+    padding-left: 3vw;
+    margin-bottom: 1vh;
+}
+
+main .list .list-head img {
+    margin-right: 2vw;
+}
+
+main .list .list-head span {
+    font-weight: 600;
+    color: #0D2750;
+    font-size: 0.9rem;
+}
+
+main .list .item .status {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Responisve */
+
+/* Galaxy S8 */
+@media screen and (max-height: 896px) {
+    main .list .item {
+        padding-left: 3vw;
+        padding-right: 2vw;
+        padding-top: 1.7vh;
+        padding-bottom: 1.7vh;
+    }
+}

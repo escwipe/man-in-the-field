@@ -11,30 +11,32 @@ body {
 }
 
 main {
-    padding: 10px;
-    padding-right: 20px;
+    padding-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 .tire-panel {
     background: linear-gradient(180deg, rgba(237, 239, 243, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
     filter: drop-shadow(0px 4px 24px rgba(67, 70, 84, 0.1));
     border-radius: 8px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .tire-panel .tire {
-    font-size: 17px;
+    font-size: 0.9rem;
     color: #0D2750;
-    margin-bottom: 5%;
+    margin-bottom: 2.3vh;
+    font-weight: 400;
 }
 
 .tire-panel .input-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10%;
+    margin-bottom: 4.5vh;
 }
 
 .tires-info {
@@ -44,29 +46,27 @@ main {
     align-items: center;
     justify-content: space-between;
     color: #0D2750;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
+
+.tires-info span { font-weight: 400; }
 
 .tire-panel .input-group .label {
     color: #0D2750;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 .button-group {
     display: flex;
-    gap: 10px;
-    margin-top: 5%;
+    gap: 3vw;
+    margin-top: 2vh;
 }
 
 .action {
     background: linear-gradient(180deg, rgba(237, 239, 243, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     filter: drop-shadow(0px 4px 24px rgba(67, 70, 84, 0.1));
     border-radius: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-top: 5%;
+    margin-top: 6vh;
 }
 
 .action button {
@@ -75,12 +75,11 @@ main {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 6px;
     width: 100%;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
-.input-group .label {
-    margin-bottom: 3px;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    font-weight: 400;
+    color: #0D2750;
+    font-size: 0.9rem;
 }
 
 .tire-panel .input-group input {
@@ -90,10 +89,10 @@ main {
     background: rgba(255, 255, 255, 0.3);
     border: 1px solid #979797;
     width: 22%;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 15px;
+    padding-left: 2.5vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 2.5vw;
     text-align: center;
 }
 
@@ -106,14 +105,19 @@ main {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 6px;
     color: #0D2750;
-    font-size: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 0.9rem;
+    padding-top: 1.4vh;
+    padding-bottom: 1.4vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
     flex: 33%;
+    font-weight: 400;
 }
 
-.green { background: linear-gradient(90deg, #75BB0A 0%, #6AAD05 100%) !important; color: white; }
-.fallow-up { background: linear-gradient(90deg, #FEC901 0%, #FDB900 100%) !important; color: white; }
-.bad { background: linear-gradient(89.13deg, #F61614 0.75%, #CD060D 99.25%) !important; color: white; }
+.input-group .label {
+    font-weight: 400;
+}
+
+.green { background: linear-gradient(90deg, #75BB0A 0%, #6AAD05 100%) !important; color: white; font-weight: 300; }
+.fallow-up { background: linear-gradient(90deg, #FEC901 0%, #FDB900 100%) !important; color: white; font-weight: 300; }
+.bad { background: linear-gradient(89.13deg, #F61614 0.75%, #CD060D 99.25%) !important; color: white; font-weight: 300; }

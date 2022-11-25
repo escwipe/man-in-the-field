@@ -11,8 +11,9 @@ body {
 }
 
 main {
-    padding: 10px;
-    padding-right: 20px;
+    padding-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 main .list {
@@ -21,10 +22,10 @@ main .list {
     background: linear-gradient(180deg, rgba(237, 239, 243, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
     filter: drop-shadow(0px 4px 24px rgba(67, 70, 84, 0.1));
     border-radius: 8px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 4%;
-    padding-right: 3%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
 }
 
 main .list .item {
@@ -36,12 +37,13 @@ main .list .item {
     border: 1px solid rgba(237, 239, 243, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 6px;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-left: 3vw;
+    padding-right: 2vw;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
     color: #0D2750;
-    margin-bottom: 5%;
+    margin-bottom: 2vh;
+    font-size: 0.9em;
 }
 
 main .list .item .status {
@@ -66,4 +68,20 @@ main .list .item .status {
 
 .item .red {
     background: linear-gradient(181.74deg, #F61614 20.78%, #CD060D 127.65%);
+}
+
+.item .grey {
+    background: linear-gradient(181.74deg, #FFFFFF 20.78%, rgba(98, 98, 98, 0) 127.65%);
+}
+
+/* Responisve */
+
+/* Galaxy S8 */
+@media screen and (max-height: 896px) {
+    main .list .item {
+        padding-left: 3vw;
+        padding-right: 2vw;
+        padding-top: 1.7vh;
+        padding-bottom: 1.7vh;
+    }
 }

@@ -40,31 +40,6 @@ section {
     align-content: center;
 }
 
-/* Breakpoints */
-
-/* Surface Pro 7 */
-@media screen and (max-height: 1370px) {
-    section {
-        grid-template-columns: 55% 55%;
-    }
-}
-
-/* iPhone XR */
-@media screen and (max-height: 900px) {
-    section {
-        grid-template-columns: 42% 42%;
-        grid-template-rows: 43% 43%;
-    }
-}
-
-/* iPhone SE */
-@media screen and (max-height: 667px) {
-    section {
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 45% 45%;
-    }
-}
-
 section .button-group {
     display: flex;
     flex-direction: column;
@@ -94,7 +69,7 @@ section .button-group span {
     align-items: center;
     justify-content: center;
     margin-top: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #0D2750;
     font-weight: 400;
     width: 100%;
@@ -110,4 +85,51 @@ section .button-group .dot {
     width: 2vh;
     height: 2vh;
     border-radius: 50%;
+}
+
+/* Surface Pro 7 */
+@media screen and (max-height: 1370px) {
+    section {
+        grid-template-columns: 55% 55%;
+    }
+}
+
+/* Samsung Galaxy S20 Ultra */
+@media screen and (max-height: 915px) {
+    section {
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 40% 40%;
+    }
+}
+
+/* iPhone XR */
+@media screen and (max-height: 900px) {
+    section {
+        grid-template-columns: 42% 42%;
+        grid-template-rows: 43% 43%;
+    }
+}
+
+/* Galaxy S8 */
+@media screen and (max-height: 740px) {
+    section {
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 40% 40%;
+    }
+}
+
+/* iPhone SE */
+@media screen and (max-height: 667px) {
+    section {
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 45% 45%;
+    }
+}
+
+/* Galaxy Note 3 */
+@media screen and (max-height: 640px) {
+    section {
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 45% 45%;
+    }
 }

@@ -11,8 +11,10 @@ body {
 }
 
 main {
-    padding: 10px;
-    padding-right: 20px;
+    font-size: 1rem;
+    padding-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 .truck-trailer {
@@ -23,8 +25,8 @@ main {
     background: linear-gradient(89.57deg, rgba(237, 239, 243, 0.3) 0.39%, rgba(255, 255, 255, 0.3) 99.67%);
     box-shadow: 0px 4px 24px rgba(67, 70, 84, 0.1);
     border-radius: 8px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
 }
 
 .truck-trailer .active {
@@ -41,23 +43,23 @@ main {
     border: 1px solid rgba(237, 239, 243, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 6px;
-    width: 80px;
-    height: 80px;
+    width: 25vw;
+    height: 12vh;
     color: #0D2750;
-    padding: 20px;
+    padding: 5vw;
 }
 
 .inspection-types {
-    margin-top: 5%;
+    margin-top: 2vh;
     display: flex;
     flex-direction: column;
     background: linear-gradient(90deg, rgba(237, 239, 243, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
     filter: drop-shadow(0px 4px 24px rgba(67, 70, 84, 0.1));
     border-radius: 8px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 10px;
-    padding-left: 10px
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
 }
 
 .inspection-types .item {
@@ -69,33 +71,34 @@ main {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 6px;
     color: #0D2750;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    margin-bottom: 12px;
+    padding-top: 1.4vh;
+    padding-bottom: 1.4vh;
+    margin-bottom: 1.5vh;
+    font-weight: 400;
 }
+
+.bold { font-weight: 400; }
 
 .truck-number {
     background: linear-gradient(90deg, rgba(237, 239, 254, 0.8) 0%, rgba(255, 255, 255, 0) 97.13%);
     filter: drop-shadow(0px 4px 24px rgba(67, 70, 84, 0.1));
     border-radius: 8px;
-    padding: 18px;
+    border-radius: 6px;
+    padding: 2vh;
     color: #0D2750;
 }
 
 .truck-number .item {
+    background: linear-gradient(98.52deg, rgba(13, 39, 80, 0.08) -22.87%, rgba(217, 217, 217, 0) 139.56%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(98.52deg, rgba(13, 39, 80, 0.08) -22.87%, rgba(217, 217, 217, 0) 139.56%);
-    border: 1px solid rgba(237, 239, 243, 0.3);
-    box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 6px;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     border-radius: 6px;
 }
 
@@ -107,21 +110,21 @@ main {
     background: linear-gradient(90deg, rgba(237, 239, 243, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
     filter: drop-shadow(0px 4px 24px rgba(67, 70, 84, 0.1));
     border-radius: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
-.start-inspection button{
+.start-inspection button {
     background: linear-gradient(90deg, #0062FF -2.76%, #0059DE 100%);
     border: 1px solid rgba(237, 239, 243, 0.3);
     border-radius: 6px;
     color: white;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     width: 100%;
-    font-size: 16px !important;
+    font-size: 1rem;
 }
 
 .truck-number .item input {
@@ -130,21 +133,20 @@ main {
     border: 1px solid rgba(237, 239, 243, 0.3);
     border-radius: 6px;
     outline: none;
-    padding-left: 6px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 6px;
-    font-size: 18px !important;
+    padding: 0.5vh;
+}
+
+.truck-number .item input::placeholder {
+    color: #0062FF;
+    font-size: 1rem;
 }
 
 .inspection-types .active {
     background: linear-gradient(90deg, #0062FF -2.76%, #0059DE 100%);
     color: white;
+    font-weight: 300;
 }
 
-.truck-number .item {
-    font-size: 18px !important;
-}
 
 .truck-size { width: 77px; height: 77px; }
 .trailer-size { width: 106px; height: 57px; margin-bottom: 12px; }

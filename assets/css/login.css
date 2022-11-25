@@ -23,43 +23,6 @@ body {
     margin-top: 90%;
 }
 
-/* Breakpoints */
-
-/* Surface Pro 7 */
-@media screen and (max-height: 1370px) {
-    .container {
-        margin-top: 65%;
-    }
-}
-
-/* iPad Air */
-@media screen and (max-height: 1180px) {
-    .container {
-        margin-top: 55%;
-    }
-}
-
-/* iPhone XR */
-@media screen and (max-height: 900px) {
-    .container {
-        margin-top: 85%;
-    }
-}
-
-/* Samsung Galaxy S8+ */
-@media screen and (max-height: 740px) {
-    .container {
-        margin-top: 75%;
-    }
-}
-
-/* iPhone SE */
-@media screen and (max-height: 667px) {
-    .container {
-        margin-top: 50%;
-    }
-}
-
 .heading {
     font-weight: 400;
     font-style: normal;
@@ -142,4 +105,60 @@ body {
     color: #0D2750;
     font-weight: 400;
     font-size: 2vh;
+}
+
+/* Surface Pro 7 */
+@media screen and (max-height: 1370px) {
+    .container {
+        margin-top: 45%;
+    }
+}
+
+/* iPad Air */
+@media screen and (max-height: 1180px) {
+    .container {
+        margin-top: 45%;
+    }
+}
+
+/* iPad Mini */
+@media screen and (max-height: 1024px) {
+    .container {
+        margin-top: 35%;
+    }
+}
+
+/* Samsung Galaxy S20 Ultra */
+@media screen and (max-height: 915px) {
+    .container {
+        margin-top: 85%;
+    }
+}
+
+/* iPhone XR */
+@media screen and (max-height: 900px) {
+    .container {
+        margin-top: 85%;
+    }
+}
+
+/* Samsung Galaxy S8+ */
+@media screen and (max-height: 740px) {
+    .container {
+        margin-top: 75%;
+    }
+}
+
+/* Samsung Galaxy S8+ */
+@media screen and (max-height: 720px) {
+    .container {
+        margin-top: 35%;
+    }
+}
+
+/* iPhone SE */
+@media screen and (max-height: 667px) {
+    .container {
+        margin-top: 50%;
+    }
 }

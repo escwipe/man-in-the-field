@@ -81,6 +81,49 @@ main {
     border-radius: 6px;
     width: 14vw;
     height: 11vh;
+    position: relative;
+}
+
+.tire {
+    position: relative;
+}
+
+.tire .top {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.tire .bottom {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.tire .position {
+    font-weight: 400;
+}
+
+.tire .green {
+    background: linear-gradient(90deg, #75BB0A 0%, #6AAD05 100%);
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+}
+
+.tire .red {
+    background: linear-gradient(90deg, #F61614 0%, #CD060D 100%);
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
 }
 
 .tires-panel .tires-middle .line {
@@ -135,7 +178,7 @@ main {
 }
 
 .tire { font-weight: 400; }
-.tires-info span { font-weight: 400; }
+.tires-info span { font-weight: 400; font-size: 0.9rem; }
 
 .action {
     background: linear-gradient(180deg, rgba(237, 239, 243, 0.5) 0%, rgba(255, 255, 255, 0) 100%);

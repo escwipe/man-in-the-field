@@ -10,6 +10,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 6vw;
 }
 
 .hamburger-menu img {
@@ -22,12 +23,13 @@ nav {
     height: 3vh;
 }
 
-.bell {
-    margin-right: 5vh;
-}
-
 .user img {
     width: 4vh;
     height: 4vh;
     border-radius: 50%;
+}
+
+.settings img {
+    width: 3vh;
+    height: 3vh;
 }

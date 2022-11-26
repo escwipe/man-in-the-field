@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html lang="en">
+<!-- Head [Start] -->
+<head>  
+    <!-- Metas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Left Light</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/layout/fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/layout/global.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/inspection-part.css"/>
+</head>
+<!-- Head [End] -->
+
+<!-- Body [Start] -->
+<body>
+    <!-- Navigation [Start] -->
+    <nav>
+        <div class="back-navigation">
+            <img src="assets/icons/back.png">
+        </div>
+        <div class="navigation-bar">
+            <div class="bell">
+                <img src="assets/icons/bell.png">
+            </div>
+            <div class="user">
+                <img src="assets/icons/sample-user.png">
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation [End] -->
+
+    <!-- Main [Start] -->
+    <main>
+        <!-- Form [Start] -->
+        <form metod="post">
+            <div class="container">
+                <div class="preview">
+                    <img src="assets/imgs/left-light.png">
+                </div>
+                <div class="status">
+                    <div id="good" class="btn">Good</div>
+                    <div id="fallow-up" class="btn">Fallow up</div>
+                    <div id="bad" class="btn">Bad</div>
+                </div>
+            </div>
+            <div class="container-action">
+                <button type="submit">Done</button>
+            </div>
+
+            <!-- 
+            Hidden Input 
+            Possible values: [good, fallow-up, bad]
+            -->
+            <input style="display: none;" type="text" name="status" id="status">
+
+        </form>
+        <!-- Form [End] -->
+    </main>
+    <!-- Main [End] -->
+
+    <!-- Footer [Start]-->
+    <footer>
+        <div class="bar inspection">
+            <div class="item">
+                <img src="assets/icons/footer/gallery.png">
+                <span>Gallery</span>
+            </div>
+            <div class="item">
+                <img src="assets/icons/footer/camera.png">
+                <span>Camera</span>
+            </div>
+            <div class="item">
+                <img src="assets/icons/footer/notes.png">
+                <span>Notes</span>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer [End]-->
+</body>
+<!-- Body [End] -->
+
+<!-- JavaScript Libraries -->
+<script src="assets/js/inspection-part.js"></script>
+
+<script>
+// Default
+document.getElementById("good").click();
+</script>
+
+</html>

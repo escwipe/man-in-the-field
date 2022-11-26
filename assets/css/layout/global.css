@@ -31,7 +31,6 @@
 }
 
 /* Notes Container */
-
 .notes-container textarea {
     outline: none;
     width: 100%;
@@ -44,5 +43,8 @@
 }
 
 /* Tag Helpers */
+.m-t-5 { margin-top: 5%; }
 .m-t-10 { margin-top: 10%; }
 .m-t-20 { margin-top: 20%; }
+
+.m-l-20 { margin-left: 20% }

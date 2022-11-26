@@ -1,0 +1,94 @@
+body {
+    background: url('../imgs/main-bg.png'); 
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.basic-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.basic-info h5 {
+    color: #0D2750;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.basic-info span {
+    color: #0D2750;
+    font-size: 0.8rem;
+}
+
+.basic-info span b {
+    font-weight: 500;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.action .action-heading {
+    color: #0D2750;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.action .action-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #0062FF -2.76%, #0059DE 100%);
+    border-radius: 6px;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.action .action-image span {
+    font-weight: 300 !important;
+}
+
+.action .action-image img {
+    width: 80%;
+    height: 80%;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(237, 239, 243, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(0px 4px 24px rgba(67, 70, 84, 0.1));
+    border-radius: 7px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padd
+}
+
+.button-group button {
+    background: linear-gradient(89.13deg, #DCE0E8 0.75%, #FFFFFF 99.25%);
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 12%;
+    padding-right: 12%;
+    font-weight: 500;
+    color: #0D2750;
+}

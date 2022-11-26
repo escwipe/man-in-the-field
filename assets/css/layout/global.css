@@ -43,8 +43,10 @@
 }
 
 /* Tag Helpers */
-.m-t-5 { margin-top: 5%; }
-.m-t-10 { margin-top: 10%; }
-.m-t-20 { margin-top: 20%; }
+.m-t-5 { margin-top: 5% !important; }
+.m-t-10 { margin-top: 10% !important; }
+.m-t-20 { margin-top: 20% !important; }
 
-.m-l-20 { margin-left: 20% }
+.m-l-20 { margin-left: 20% !important; }
+
+.p-t-10 { padding-top: 10% !important; }

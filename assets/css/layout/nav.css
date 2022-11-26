@@ -13,6 +13,13 @@ nav {
     gap: 6vw;
 }
 
+.middle-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50%;
+}
+
 .hamburger-menu img {
     width: 3vh;
     height: 3vh;

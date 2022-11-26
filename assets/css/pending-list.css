@@ -1,0 +1,149 @@
+body {
+    background: url('../imgs/main-bg.png'); 
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+main {
+    padding-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+main .list {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 24px rgba(67, 70, 84, 0.1);
+    border-radius: 8px;
+    border-radius: 8px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+main .list .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(89.13deg, #DCE0E8 0.75%, #FFFFFF 99.25%);
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    padding-left: 3vw;
+    padding-right: 2vw;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    color: #0D2750;
+    margin-bottom: 2vh;
+    font-size: 0.9em;
+}
+
+main .list .item-list {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    background: linear-gradient(89.13deg, #DCE0E8 0.75%, #FFFFFF 99.25%);
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+main .list .item .status, main .list .item-list .status {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    right: 2%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.item-list .info {
+    font-size: 0.7rem;
+}
+
+.item-list .info b {
+    font-weight: 600;
+    color: #0D2750;
+}
+
+.primary {
+    position: relative;
+    padding-top: 6% !important;
+    padding-bottom: 6% !important;
+    background: linear-gradient(90deg, #0062FF -2.76%, #0059DE 100%) !important;
+    color: white !important;
+}
+
+.item .green, .item-list .green {
+    background: linear-gradient(181.74deg, #43B015 20.78%, rgba(70, 210, 79, 0.25) 127.65%);
+}
+
+.item .orange, .item-list .orange {
+    background: linear-gradient(181.74deg, #FEC901 20.78%, #FDB900 127.65%);
+}
+
+.item .red, .item-list .red {
+    background: linear-gradient(181.74deg, #F61614 20.78%, #CD060D 127.65%);
+}
+
+.item .grey, .item-list .grey {
+    background: linear-gradient(181.74deg, #FFFFFF 20.78%, rgba(98, 98, 98, 0) 127.65%);
+}
+
+.start-inspection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 24px rgba(67, 70, 84, 0.1);
+    border-radius: 7px;
+    border-radius: 8px;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.start-inspection button {
+    background: linear-gradient(90deg, #0062FF -2.76%, #0059DE 100%);
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    border-radius: 6px;
+    color: white;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+    font-size: 0.8rem !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Responisve */
+
+/* Galaxy S8 */
+@media screen and (max-height: 896px) {
+    main .list .item {
+        padding-left: 3vw;
+        padding-right: 2vw;
+        padding-top: 1.7vh;
+        padding-bottom: 1.7vh;
+    }
+}

@@ -202,3 +202,18 @@ main {
     font-size: 1rem;
     font-weight: 400;
 }
+
+.red-bg {
+    background: linear-gradient(89.13deg, #F61614 0.75%, #CD060D 99.25%) !important;
+    color: white;
+}
+
+.green-bg {
+    background: linear-gradient(89.13deg, #43B015 0.75%, #46D24F 99.25%) !important;
+    color: white;
+}
+
+.orange-bg {
+    background: linear-gradient(89.13deg, #F07922 0.75%, #FFEB70 99.25%) !important;
+    color: white;
+}

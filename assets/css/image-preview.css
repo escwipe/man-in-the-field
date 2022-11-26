@@ -1,0 +1,38 @@
+body {
+    background: url('../imgs/main-bg.png'); 
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+main .image-preview {
+    width: 100%;
+    position: relative;
+}
+
+main img {
+    width: 100%;
+    height: 86vh;
+}
+
+.image-preview button {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    left: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+}
+
+.image-preview button img {
+   width: 5%;
+   height: 10%; 
+}

@@ -22,6 +22,12 @@ footer .bar {
     gap: 7vh;
 }
 
+footer .inspection {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
 footer .bar .item img {
     width: 10vh;
     height: 10vh;

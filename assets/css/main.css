@@ -11,9 +11,10 @@ body {
 }
 
 main {
-    padding-top: 2vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
 }
 
 .welcome-text {
@@ -49,10 +50,10 @@ section .button-group {
     border: 1px solid rgba(237, 239, 243, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 6px;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
-    padding-left: 6vh;
-    padding-right: 6vh;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10vw;
+    padding-right: 10vw;
     position: relative;
 }
 
@@ -60,8 +61,8 @@ section .button-group img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10vh;
-    height: 10vh;
+    width: 15vw;
+    height: 9vh;
 }
 
 section .button-group span {
@@ -69,7 +70,7 @@ section .button-group span {
     align-items: center;
     justify-content: center;
     margin-top: 5px;
-    font-size: 0.9rem;
+    font-size: 2.2vh;
     color: #0D2750;
     font-weight: 400;
     width: 100%;
@@ -82,54 +83,7 @@ section .button-group .dot {
     background: linear-gradient(181.74deg, #FFFFFF 20.78%, rgba(98, 98, 98, 0) 127.65%);
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
-    width: 2vh;
+    width: 3.2vw;
     height: 2vh;
     border-radius: 50%;
-}
-
-/* Surface Pro 7 */
-@media screen and (max-height: 1370px) {
-    section {
-        grid-template-columns: 55% 55%;
-    }
-}
-
-/* Samsung Galaxy S20 Ultra */
-@media screen and (max-height: 915px) {
-    section {
-        grid-template-columns: 40% 40%;
-        grid-template-rows: 40% 40%;
-    }
-}
-
-/* iPhone XR */
-@media screen and (max-height: 900px) {
-    section {
-        grid-template-columns: 42% 42%;
-        grid-template-rows: 43% 43%;
-    }
-}
-
-/* Galaxy S8 */
-@media screen and (max-height: 740px) {
-    section {
-        grid-template-columns: 40% 40%;
-        grid-template-rows: 40% 40%;
-    }
-}
-
-/* iPhone SE */
-@media screen and (max-height: 667px) {
-    section {
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 45% 45%;
-    }
-}
-
-/* Galaxy Note 3 */
-@media screen and (max-height: 640px) {
-    section {
-        grid-template-columns: 40% 40%;
-        grid-template-rows: 45% 45%;
-    }
 }

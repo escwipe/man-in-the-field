@@ -67,6 +67,9 @@
 .relative { position: relative; }
 .absolute { position: absolute; }
 
-.reset-p { 
-    padding-bottom: 0 !important; 
+.reset-p { padding-bottom: 0 !important; }
+
+.primary-hover:active { 
+    background: linear-gradient(90deg, #0062FF -2.76%, #0059DE 100%) !important;
+    color: white !important;
 }

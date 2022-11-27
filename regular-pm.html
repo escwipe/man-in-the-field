@@ -35,31 +35,39 @@
 
     <!-- Main [Start] -->
     <main>
-        <div class="list">
-            <div class="item primary">
-                <div class="name">Tires</div>
-                <div class="status grey"></div>
+        <form method="post">
+            <div class="list">
+                <div onclick="FillStatus('tires');" class="item primary">
+                    <div class="name">Tires</div>
+                    <div class="status grey"></div>
+                </div>
+                <div onclick="FillStatus('lights');" class="item">
+                    <div class="name">Lights</div>
+                    <div class="status red"></div>
+                </div>
+                <div onclick="FillStatus('mirrors');" class="item">
+                    <div class="name">Mirrors</div>
+                    <div class="status green"></div>
+                </div>
+                <div onclick="FillStatus('windshield');" class="item">
+                    <div class="name">Windshield</div>
+                    <div class="status orange"></div>
+                </div>
+                <div onclick="FillStatus('suspension');" class="item">
+                    <div class="name">Suspension</div>
+                    <div class="status green"></div>
+                </div>
             </div>
-            <div class="item">
-                <div class="name">Lights</div>
-                <div class="status red"></div>
+            <div class="action">
+                <button type="submit">Done</button>
             </div>
-            <div class="item">
-                <div class="name">Mirrors</div>
-                <div class="status green"></div>
-            </div>
-            <div class="item">
-                <div class="name">Windshield</div>
-                <div class="status orange"></div>
-            </div>
-            <div class="item">
-                <div class="name">Suspension</div>
-                <div class="status green"></div>
-            </div>
-        </div>
-        <div class="action">
-            <button>Done</button>
-        </div>
+
+            <!-- 
+            Hidden Input 
+            Possible values: []
+            -->
+            <input type="text" name="status" id="status">
+        </form>
     </main>
     <!-- Main [End] -->
 
@@ -91,5 +99,8 @@
     <!-- Footer [End] -->
 </body>
 <!-- Body [End] -->
+
+<!-- JavaScript Libraries -->
+<script src="assets/js/main.js"></script>
 
 </html>

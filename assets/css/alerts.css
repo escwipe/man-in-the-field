@@ -33,6 +33,11 @@ main .details .truck {
     border: 1px solid rgba(237, 239, 243, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     border-radius: 6px;
+    border-radius: 6px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 main .details {
@@ -69,165 +74,104 @@ main .details .truck {
     border-radius: 6px;
 }
 
-.clouds {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 6%;
-    margin-right: 6%;
-
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-row: auto auto;
-    grid-column-gap: 3%;
-    grid-row-gap: 7%;
-}
-
-.clouds .item {
-    background: linear-gradient(90.05deg, #DCE0E8 1.38%, #FFFFFF 99.71%);
-    border: 1px solid rgba(237, 239, 243, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+.incident-heading {
+    background: linear-gradient(90deg, #0062FF -2.76%, #0059DE 100%);
+    border: 1px solid #FFFFFF;
     border-radius: 6px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 8%;
-    padding-bottom: 8%;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     position: relative;
+    font-size: 1rem !important;
 }
 
-.status {
+.dot {
+    background: linear-gradient(181.74deg, #FFFFFF 20.78%, rgba(98, 98, 98, 0) 127.65%);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
     position: absolute;
-    top: 3%;
-    right: 3%;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 4px rgba(0, 0, 0, 0.25) !important;
-}
-
-.events-list {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.7rem;
-    margin-top: 1%;
-    margin-bottom: 4%;
-    margin-left: 6%;
+    right: 0;
+    margin-top: 2%;
     margin-right: 3%;
 }
 
-.events-list .event-top {
-    box-sizing: border-box;
-    background: linear-gradient(90deg, #0062FF -2.76%, #0059DE 100%);
-    border: 1px solid rgba(237, 239, 243, 0.3);
-    border-radius: 6px;
-    color: white;
-    font-size: 0.8rem;
-    padding-left: 5%;
-    padding-top: 4%;
-    padding-bottom: 4%;
+.dot-12 {
+    width: 12px !important;
+    height: 12px !important;
 }
 
-.events-list .event-bottom {
-    margin-top: 1%;
+.bg-green {
+    background: linear-gradient(181.74deg, #75BB0A 20.78%, #6AAD05 127.65%);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bg-red {
+    background: linear-gradient(181.74deg, #F61614 20.78%, #CD060D 127.65%);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bg-yellow {
+    background: linear-gradient(181.74deg, #FEC901 20.78%, #FDB900 127.65%);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.add-incident {
     display: flex;
-    background: linear-gradient(90.05deg, #DCE0E8 1.38%, #FFFFFF 99.71%);
-    border: 1px solid rgba(237, 239, 243, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
-    border-radius: 6px;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    position: relative;
-}
-
-.event-info button {
-    background: linear-gradient(90.05deg, #E9ECF2 -8.49%, #FFFFFF 89.84%);
-    border: 1px solid rgba(237, 239, 243, 0.3);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
-    border-radius: 6px;
-    color: #193867;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    font-size: 0.7rem;
-    font-weight: 400;
-    bottom: 15%;
-    right: 3%;
-}
-
-.events-list .centered {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-}
-
-.events-list a {
-    color: #0164FF;
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 400;
-}
-
-.last-service {
-    margin-top: 7%;
-    margin-left: 6%;
+    justify-content: end;
+    margin-top: 3%; 
+    margin-left: 5%;
     margin-right: 5%;
-    font-size: 0.8rem;
-    color: #0D2750;
-    font-weight: 400;
 }
 
-.events-list .event-info {
-    color: #0D2750;
-    margin-right: 15%;
-}
-
-.event-info b {
-    font-weight: 500;
-}
-
-.red { background-color: red; }
-.green { background-color: green; }
-.orange { background-color: orange; }
-
-.grey {
-    font-size: 0.7rem;
-}
-
-.clouds .item .grey {
-    color: #979797;
-}
-
-.extra-bold {
-    font-weight: 900;
-    color: #0D2750;
-    font-size: 0.9rem !important;
-}
-
-.submit {
-    display: flex;
+.add-incident button {
+    background: linear-gradient(98.52deg, rgba(13, 39, 80, 0.08) -22.87%, rgba(217, 217, 217, 0) 139.56%);
+    border: 1px solid #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding-left: 5%;
+    border-radius: 6px;
+    padding-left: 3%;
     padding-right: 3%;
+    color: #0D2750;
 }
 
-.submit button {
+.incident-list {
+    margin-top: 3%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+}
+
+.incident {
     padding-top: 2%;
     padding-bottom: 2%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
     width: 100%;
-    background: linear-gradient(90deg, #0062FF -2.76%, #0059DE 100%);
-    border: 1px solid rgba(237, 239, 243, 0.3);
-    border-radius: 6px; 
-    color: white;
-    font-size: 0.9rem;
+    box-sizing: border-box;
+    background: linear-gradient(98.52deg, rgba(13, 39, 80, 0.08) -22.87%, rgba(217, 217, 217, 0) 139.56%);
+    border: 1px solid #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 6px;
+    color: #0D2750;
+    gap: 15%;
+    margin-bottom: 1%;
 }
 
-.primary {
-    background: #0062FF !important;
-    color: white !important;
-    font-weight: 300 !important;
+.incident-list .incident {
+    display: flex;
+}
+
+.incident-list b {
+    font-weight: 600;
 }

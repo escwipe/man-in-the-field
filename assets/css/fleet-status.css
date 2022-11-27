@@ -34,6 +34,10 @@ b { font-weight: 400; }
     margin-bottom: 3%;
 }
 
+.clouds-3 .small {
+    font-size: 0.6rem !important;
+}
+
 .clouds .item, .clouds-3 .item {
     background: linear-gradient(90.05deg, #DCE0E8 1.38%, #FFFFFF 99.71%);
     border: 1px solid rgba(237, 239, 243, 0.3);
@@ -45,7 +49,70 @@ b { font-weight: 400; }
     align-items: center;
     padding-top: 4%;
     padding-bottom: 4%;
-    position: relative;
+    width: 100%;
+}
+
+.item-nd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.height-eight { height: 8vh; }
+
+.item-nd .item-nd-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 0.7rem !important;
+    width: 100%;
+}
+
+.orange-bg { background: linear-gradient(89.12deg, #FEC901 0.76%, #FDB900 99.24%); }
+
+.item-col-3 {
+    width: 101%;
+    height: 34%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 0.6rem;
+}
+
+.item-col-3 span {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #193867;
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    height: 100%;
+}
+
+.bg-green {
+    background: linear-gradient(89.22deg, #75BB0A 2%, #6AAD05 99.33%);
+    color: white !important;
+}
+
+.bg-red {
+    background: linear-gradient(89.54deg, #F61614 1.73%, #CD060D 99.59%);
+    color: white !important;
+}
+
+.bg-orange {
+    background: linear-gradient(89.12deg, #FEC901 0.76%, #FDB900 99.24%);
+    color: white !important;
+}
+
+.bg-standard {
+    background: linear-gradient(90.05deg, #E9ECF2 1.38%, #FFFFFF 99.71%);
+    border: 1px solid rgba(237, 239, 243, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
 }
 
 .clouds-container {
@@ -76,7 +143,7 @@ b { font-weight: 400; }
 .green { background-color: green; }
 .orange { background-color: orange; }
 
-.grey { font-size: 0.7rem; }
+.grey { font-size: 0.6rem !important; color: #979797; }
 
 .clouds .item .grey, .clouds-3 .item .grey {
     color: #979797;

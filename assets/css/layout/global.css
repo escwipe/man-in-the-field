@@ -54,3 +54,7 @@
 
 .relative { position: relative; }
 .absolute { position: absolute; }
+
+.reset-p { 
+    padding-bottom: 0 !important; 
+}

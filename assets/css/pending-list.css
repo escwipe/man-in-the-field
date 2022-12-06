@@ -29,6 +29,11 @@ main .list {
     padding-right: 6vw;
 }
 
+main .list .vertical-scroll {
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
 main .list .item {
     display: flex;
     flex-direction: row;

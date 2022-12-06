@@ -35,7 +35,7 @@
 
     <!-- Main [Start] -->
     <main>
-        <form method="post">
+        <form method="get">
             <div class="list">
                 <div onclick="FillStatus('tires');" class="item primary">
                     <div class="name">Tires</div>
@@ -57,6 +57,18 @@
                     <div class="name">Suspension</div>
                     <div class="status green"></div>
                 </div>
+                <div onclick="FillStatus('suspension');" class="item">
+                    <div class="name">Suspension</div>
+                    <div class="status green"></div>
+                </div>
+                <div onclick="FillStatus('suspension');" class="item">
+                    <div class="name">Suspension</div>
+                    <div class="status green"></div>
+                </div>
+                <div onclick="FillStatus('suspension');" class="item">
+                    <div class="name">Suspension</div>
+                    <div class="status green"></div>
+                </div>
             </div>
             <div class="action">
                 <button type="submit">Done</button>
@@ -66,7 +78,7 @@
             Hidden Input 
             Possible values: []
             -->
-            <input type="text" name="status" id="status">
+            <input hidden type="text" name="status" id="status">
         </form>
     </main>
     <!-- Main [End] -->

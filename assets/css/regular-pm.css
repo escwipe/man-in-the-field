@@ -26,6 +26,8 @@ main .list {
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
+    max-height: 50vh;
+    overflow-y: auto;
 }
 
 main .action {

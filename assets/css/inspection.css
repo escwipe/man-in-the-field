@@ -86,7 +86,7 @@ main .details .truck {
     align-items: center;
 }
 
-.reason-list .list span {
+.reason-list .list span, .reason-list .list a {
     font-weight: 400;
     color: #0D2750;
     margin-bottom: 3%;
@@ -99,6 +99,12 @@ main .details .truck {
     padding-left: 7vw;
     padding-right: 7vw;
     width: 100%;
+}
+
+.reason-list .list a:active {
+    background: #0062FF !important;
+    color: white !important;
+    font-weight: 300 !important;
 }
 
 .inspection-submit {
